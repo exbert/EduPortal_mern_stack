@@ -3,6 +3,7 @@
 
 # Custom
 temp/
+config/
 
 ### Node ###
 # Logs
