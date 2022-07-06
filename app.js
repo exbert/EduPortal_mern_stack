@@ -29,6 +29,8 @@ app.set("view engine", "ejs");
 // Middleware configuration
 
 app.use(express.static("public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.listen(PORT, () => console.log(`App started on port ${PORT}!`));
 
