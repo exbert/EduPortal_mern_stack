@@ -5,6 +5,7 @@ const app = express();
 
 const pageRoute = require("./routes/pageRoute");
 const courseRoute = require("./routes/courseRoute");
+const categoryRoute = require("./routes/categoryRoute");
 
 // Environment Variables
 dotenv.config({
@@ -38,3 +39,4 @@ app.listen(PORT, () => console.log(`App started on port ${PORT}!`));
 
 app.use("/", pageRoute);
 app.use("/courses", courseRoute);
+app.use("/categories", categoryRoute);
