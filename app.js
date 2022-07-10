@@ -12,6 +12,7 @@ const categoryRoute = require("./routes/categoryRoute");
 const userRoute = require("./routes/userRoute");
 const loginRoute = require("./routes/loginRoute");
 const logoutRoute = require("./routes/logoutRoute");
+const dashboardRoute = require("./routes/dashboardRoute");
 
 // Environment Variables
 dotenv.config({
@@ -65,3 +66,4 @@ app.use("/categories", categoryRoute);
 app.use("/users", userRoute);
 app.use("/login", loginRoute);
 app.use("/logout", logoutRoute);
+app.use("/dashboard", dashboardRoute);
